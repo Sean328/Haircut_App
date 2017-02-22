@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="#E9E9E9"
+    android:layout_height="fill_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/normal_orange_color" >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/main_search_bg"
+            android:orientation="vertical" >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_tab_promo_search_selected"
+                android:hint="输入商户名、地点"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:layout_marginTop="7dp"
+	    android:background="#eee"
+	    android:orientation="vertical" >
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="47dp"
+	        android:background="#ffffffff"
+	        android:orientation="horizontal" >
+	
+	        <LinearLayout
+	            android:id="@+id/id_ll_chat"
+	            android:layout_width="0dp"
+	            android:orientation="horizontal"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1"
+	            android:gravity="center" >
+	
+	            <TextView
+	                android:id="@+id/id_tv_moren"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="18sp"
+	                android:text="默认顺序"
+	                android:textColor="#f65a4e" />
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1"
+	            android:gravity="center" >
+	
+	            <TextView
+	                android:id="@+id/id_tv_juli"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="18sp"
+	                android:textColor="#000000"
+	                android:text="离我最近" />
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1"
+	            android:gravity="center" >
+	
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000"
+	                android:textSize="18sp"
+	                android:id="@+id/id_tv_pingfen"
+	                android:text="评分最高" />
+	        </LinearLayout>
+	    </LinearLayout>
+	
+	    <ImageView
+	        android:id="@+id/id_iv_tabline"
+	        android:layout_width="100dp"
+	        android:layout_height="3dp"
+	        android:background="@color/red" />
+	
+	</LinearLayout>
+    
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#000000"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+    
+
+</LinearLayout>

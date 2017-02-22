@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/base"
+    android:background="#ffffff"
+    android:padding="3dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical" >
+    
+   <com.example.smart.SmartImageView
+        android:id="@+id/smartImageView"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:padding="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/tongyong" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/smartImageView"
+        android:text="店铺名称"
+        android:textColor="#000"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="16sp" />
+    
+      <TextView
+        android:id="@+id/tv_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/smartImageView"
+        android:paddingTop="5dp"
+        android:text="店铺简介:我是一家店铺"
+        android:textColor="#011"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/smartImageView"
+        android:layout_alignLeft="@+id/tv_title"
+        android:drawableLeft="@drawable/loc"
+        android:text="区域"
+        android:textColor="@color/red"
+        android:textSize="12sp" />
+    
+    <RatingBar
+            android:id="@+id/rb_score"
+            style="@style/custom_ratingbar_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_intro"
+        	android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+
+
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_address"
+        android:layout_alignBottom="@+id/tv_address"
+        android:layout_alignParentRight="true"
+        android:text="距离"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp" />
+
+</RelativeLayout>

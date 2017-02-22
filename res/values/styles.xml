@@ -1,0 +1,77 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!-- 自定义Loading Dialog -->
+    <style name="loading_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    
+     <!-- 低栏RadioButton的样式 -->
+    <style name="BottomTabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@drawable/main_color_selector</item>
+   		<item name="android:textSize">12dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 主页banner图下四个button的布局 -->
+        <style name="BannerTabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    
+        
+    <style name="custom_ratingbar_style" parent="@android:style/Widget.RatingBar">  
+        <item name="android:progressDrawable">@drawable/custom_ratingbar_progress</item>  
+        <item name="android:minHeight">17dip</item>  
+        <item name="android:maxHeight">17dip</item>  
+        <item name="android:stepSize">0.1</item>
+	    <item name="android:isIndicator">true</item>
+    </style> 
+    
+    <!-- checkbox -->
+    <style name="VideoDownloadCheckbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+    <item name="android:button">@null</item>
+    <item name="android:background">@drawable/usercenter_delete_selector</item>
+    </style>
+    <!-- rating bar 样式 -->
+     <style name="roomRatingBar" parent="@android:style/Widget.RatingBar"> 
+ 
+		<item name="android:progressDrawable">@drawable/ratingbar_drawable</item> 
+		 
+		<item name="android:minHeight">27dip</item> 
+		 
+		<item name="android:maxHeight">27dip</item> 
+	 
+	</style>
+    
+    
+</resources>

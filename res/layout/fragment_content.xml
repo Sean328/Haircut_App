@@ -1,0 +1,54 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <FrameLayout
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+   	<RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/main_home_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_barber"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/main_barber_selector"
+            android:text="店铺" />
+
+        <RadioButton
+            android:id="@+id/rb_smartmatch"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/main_smartmatch_selector"
+            android:text="智能匹配" />
+        
+         <RadioButton
+            android:id="@+id/rb_message"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/main_message_selector"
+            android:text="消息" />
+
+        <RadioButton
+            android:id="@+id/rb_users"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/main_user_selector"
+            android:text="个人中心" />
+
+
+    </RadioGroup>
+
+</LinearLayout>

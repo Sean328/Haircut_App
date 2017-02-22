@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#E1E0DE">
+    
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+        	android:focusableInTouchMode="true"
+            android:orientation="vertical">
+            
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+    
+			    <com.example.smart.SmartImageView
+			        android:id="@+id/goods_smartImageView_goodsdetail"
+			        android:layout_width="match_parent"
+			        android:layout_height="210dp"
+			        android:scaleType="fitXY"
+			        android:padding="1dp"
+			        android:background="@android:color/darker_gray"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentTop="true"
+			        android:src="@drawable/tongyong" />
+			    
+		    </RelativeLayout>
+		    
+		    
+		    <RelativeLayout 
+		        android:id="@+id/goods_detail"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/goods_smartImageView_goodsdetail"
+		        android:background="#ffffff">
+		        
+		        <TextView 
+		            android:id="@+id/goods_shop_name"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_below="@+id/goods_name"
+		            android:layout_marginLeft="20dp"
+		            android:layout_marginTop="20dp"
+		            android:text="商店名称"
+		            android:textColor="@color/gray"
+		            android:textSize="14sp"/>
+		
+		        <TextView
+		            android:id="@+id/goods_price"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBaseline="@+id/goods_shop_name"
+		            android:layout_alignBottom="@+id/goods_shop_name"
+		            android:layout_alignParentRight="true"
+		            android:layout_marginRight="22dp"
+		            android:layout_marginBottom="5dp"
+		            android:text="价格"
+		            android:textColor="@color/red"
+		            android:textSize="22sp" />
+		
+		        <TextView
+		            android:id="@+id/goods_name"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignLeft="@+id/goods_shop_name"
+		            android:layout_alignParentTop="true"
+		            android:layout_marginTop="10dp"
+		            android:text="商品名称"
+		            android:textSize="18sp" />
+		        
+		    </RelativeLayout>
+		    
+		    
+		    <LinearLayout 
+		        android:id="@+id/xiangqing"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/goods_detail"
+		        android:layout_marginTop="5dp"
+		        android:background="#ffffff"
+		        android:orientation="vertical">
+		        
+		        <TextView 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="15dp"
+		            android:layout_marginLeft="12dp"
+		            android:drawableLeft="@drawable/notice_detail"
+		            android:drawablePadding="10dp"
+		            android:text="服务详情"
+		            android:textSize="15sp"/>
+		        
+		        <View 
+		            android:layout_width="match_parent"
+		            android:layout_height="1dp"
+		            android:background="#E1E0DE"
+		            android:layout_marginLeft="10dp"
+		            android:layout_marginRight="10dp"
+		            android:layout_marginTop="15dp"
+		            android:layout_marginBottom="8dp"/>
+		        
+		        <TextView 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="12dp"
+		            android:drawablePadding="10dp"
+		            android:text="使用方法："
+		            android:textSize="15sp"/>
+		        
+		        <TextView 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="12dp"
+		            android:drawablePadding="10dp"
+		            android:text="请向商家前台出示嗨咔券，我们会告知您购买的项目明细，确认消费，享受服务。"
+		            android:textSize="15sp"/>
+		        
+		        <TextView 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="12dp"
+		            android:layout_marginTop="15dp"
+		            android:drawablePadding="10dp"
+		            android:text="服务流程："
+		            android:textSize="15sp"/>
+		        <TextView 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="12dp"
+		            android:drawablePadding="10dp"
+		            android:text="洗发→头部按摩→冲洗→造型"
+		            android:textSize="15sp"/>
+		        
+		        <TextView 
+		            android:id="@+id/shop_open_time"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="12dp"
+		            android:layout_marginTop="15dp"
+		            android:drawablePadding="10dp"
+		            android:text="营业时间："
+		            android:textSize="15sp"/>
+		        <TextView 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="12dp"
+		            android:drawablePadding="10dp"
+		            android:text="9：30 - 23：00"
+		            android:textSize="15sp"/>
+		        
+		        
+		        <TextView 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="12dp"
+		            android:layout_marginTop="15dp"
+		            android:drawablePadding="10dp"
+		            android:text="温馨提醒："
+		            android:textSize="15sp"/>
+		        <TextView 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="12dp"
+		            android:layout_marginBottom="15dp"
+		            android:drawablePadding="10dp"
+		            android:text="本店提供免费wifi，茶水"
+		            android:textSize="15sp"/>
+		        
+		    </LinearLayout>
+		    
+		    <View 
+		            android:layout_width="match_parent"
+		            android:layout_height="1dp"
+		            android:background="#E1E0DE"
+		            android:layout_marginLeft="10dp"/>
+		    
+		    <include layout="@layout/activity_goodsdetail2"/>
+		    <include layout="@layout/activity_goodsdetail3"/>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="70dp">
+		        
+		    </LinearLayout>
+		      
+	    </LinearLayout>
+	    
+    
+    </ScrollView>
+    
+    
+    <ImageView 
+		android:id="@+id/goods_img_back"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:src="@drawable/title_back_normal"/>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        
+        <TextView
+            android:id="@+id/tv_shoucang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="收藏"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="#E1E0DE"/>
+        
+        <TextView
+            android:id="@+id/tv_gouwuche"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="加入购物车"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="@color/orange"
+            android:textSize="20sp"/>
+        
+        <TextView
+            android:id="@+id/tv_goumai"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="购买"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:background="@color/normal_orange_color"
+            android:textSize="20sp"/>
+        
+        
+    </LinearLayout>
+ 
+    
+
+</RelativeLayout>

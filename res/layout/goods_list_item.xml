@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/base"
+    android:background="#ffffff"
+    android:padding="3dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical" >
+    
+   <com.example.smart.SmartImageView
+        android:id="@+id/goods_smartImageView"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:padding="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/tongyong" />
+
+    <TextView
+        android:id="@+id/tv_goods_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/goods_smartImageView"
+        android:text="商品名称"
+        android:textColor="@color/orangered"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="18sp" />
+    
+      <TextView
+        android:id="@+id/tv_dianpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_goods_title"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/goods_smartImageView"
+        android:paddingTop="5dp"
+        android:layout_marginTop="10dp"
+        android:text="店铺简介:我"
+        android:textColor="#011"
+        android:ellipsize="end"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_jiage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_dianpu"
+        android:layout_marginRight="19dp"
+        android:text="价格"
+        android:textColor="@color/orangered"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical" >
+    
+	 <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/index_city_top"
+        android:background="@color/normal_orange_color" >
+        
+
+        <TextView
+            android:id="@+id/index_city_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="  选择城市"
+            android:background="@color/normal_orange_color"
+            android:drawableLeft="@drawable/back"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+        
+        
+        <ImageView 
+            android:id="@+id/index_top_flushcity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@null"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/user_adress_refresh"/>
+        
+    </RelativeLayout>
+
+	 <ListView
+	     android:id="@+id/city_list"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content" >
+	 </ListView>
+	 
+</LinearLayout>

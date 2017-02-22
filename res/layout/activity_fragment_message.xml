@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1E0DE"
+    android:orientation="vertical" >
+    
+    
+       <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/normal_orange_color" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="消息"
+            android:background="@color/normal_orange_color"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+        
+    </RelativeLayout>
+    
+       
+       <LinearLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/corners_bg"
+        android:gravity="center_vertical"
+        android:padding="10dp" >
+        
+           
+         <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/search_gary" />
+
+         <EditText
+             android:id="@+id/textView2"
+             android:layout_width="match_parent"
+             android:layout_height="30dp"
+             android:ems="10"
+             android:hint="搜索"
+             android:textColorHint="@color/gray"
+             android:textSize="12sp" >
+
+             <requestFocus />
+         </EditText>
+         
+    </LinearLayout>
+    
+       
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider ="#E9E9E9"
+	    android:dividerHeight="2dp"
+        android:background="#E1E0DE" >
+    </ListView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1E0DE"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff" >
+        
+           
+         <TextView
+            android:id="@+id/imgback_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text=" 返回"
+            android:drawableLeft="@drawable/common_toobar_icon_back"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="添加评价"
+            android:textColor="@color/gray"
+            android:textSize="20sp" />
+        
+    </RelativeLayout>
+
+  
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:orientation="vertical" >
+        
+        <TextView
+	        android:id="@+id/textView"
+	        android:layout_width="match_parent"
+	        android:layout_height="35dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginTop="5dp"
+	        android:background="#fff"
+	        android:gravity="center_vertical"
+	        android:text="服务评价"
+	        android:textSize="18sp" />
+        
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView"
+            android:background="#E1E0DE" />
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            style="@style/roomRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#fff"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/rar_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ratingBar1"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/ratingBar1"
+            android:layout_marginLeft="5dp"
+            android:text="  "
+            android:textSize="18sp"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+        
+        
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+	        android:layout_marginTop="5dp"
+	        android:gravity="center_vertical"
+            android:text="您的评价"
+            android:textSize="18sp"/>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/textView"
+            android:background="#E1E0DE" />
+        
+        <EditText 
+            android:id="@+id/edit_comment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#fff"
+            android:hint="在这里输入您的评价..."
+            android:singleLine="false"
+            android:gravity="top|left"/>
+        
+        
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/comment_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:text="提交评价"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/category_card_bg_juse"/>
+
+</LinearLayout>

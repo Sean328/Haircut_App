@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9"
+    android:orientation="vertical" >
+    
+       <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/normal_orange_color" >
+        
+	           <TextView
+	            android:id="@+id/index_top_city"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:gravity="center_vertical"
+	            android:layout_marginLeft="10dp"
+	            android:text=" 选择城市 "
+	            android:textSize="18sp"
+	            android:drawableLeft="@drawable/home_ico_city"
+	            android:textColor="#fff" />
+
+		        <TextView
+		            android:id="@+id/tv_title"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerHorizontal="true"
+		            android:layout_centerVertical="true"
+		            android:text="首页"
+		            android:background="@color/normal_orange_color"
+		            android:textColor="#fff"
+		            android:textSize="22sp" />
+        
+        
+		        <ImageView 
+		            android:id="@+id/index_top_scan"
+		            android:layout_width="30dp"
+		            android:layout_height="30dp"
+		            android:contentDescription="@null"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:gravity="center_vertical"
+		            android:layout_marginRight="10dp"
+		            android:src="@drawable/nav_icon_scan_nor"/>
+        
+    	</RelativeLayout>
+    	
+       
+		
+       <View 
+		   android:layout_width="match_parent"
+		   android:layout_height="1dp"
+		   android:background="#E1E0DE"
+		   android:layout_marginLeft="10dp"/> 
+       
+        <ListView
+			android:id="@+id/listView_recommend"
+			android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#F7F7F7"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:divider ="#E1E0DE"
+	        android:dividerHeight="2dp">
+		</ListView>
+
+</LinearLayout>

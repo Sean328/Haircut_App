@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haircut.haircut_alpha"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    
+    <!-- 这个权限用于进行网络定位-->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<!-- 这个权限用于访问GPS定位-->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+	<!-- 用于读取手机当前的状态-->
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+	<!-- 访问网络，网络定位需要上网-->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<!-- SD卡读取权限，用户写入离线定位数据-->
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+	<!--允许应用读取低级别的系统日志文件 -->
+	<uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+	<uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	
+	
+	
+    
+    <application
+        android:name="HairCutApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/haircut_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <!-- 设置环信应用的appkey -->
+    	<meta-data android:name="EASEMOB_APPKEY"  android:value="matrix#haircut" />
+    	<!-- 声明sdk所需的service SDK核心功能-->
+    	<service android:name="com.easemob.chat.EMChatService" />
+    	
+    	<!-- 开机自启动服务 -->
+        <receiver android:name="com.easemob.chat.StartServiceReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+        
+        <activity
+            android:name="com.haircut.haircut_alpha.activity.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+			android:name="com.mob.tools.MobUIShell"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:configChanges="keyboardHidden|orientation|screenSize"
+			android:windowSoftInputMode="stateHidden|adjustResize"/>
+        
+        <activity android:name="com.haircut.haircut_alpha.activity.MainActivity"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.CitySelectActivity"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.ShopDetial"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.ChatActivity"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.LoginActivity"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.Home_huli"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.Home_jianfa"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.Home_ranfa"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.Home_tangfa"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.RegisterActivity"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.GoodsDetailActivity"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.OrderSubmitActivity"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.PayActivity"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.secondary.MyOrders"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.secondary.MyCart"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.secondary.MyShopCollect"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.secondary.MyGoodsCollect"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.secondary.RatingActivity"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.secondary.OrderFinish"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.secondary.LoginNull"></activity>
+        
+        <activity android:name="com.haircut.haircut_alpha.activity.secondary.NetworkBolean"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.secondary.MySettings"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.settings.ModificationName"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.secondary.NoKaquanActivity"></activity>
+        <activity android:name="com.haircut.haircut_alpha.activity.secondary.ImageDetailsActivity"></activity>
+        
+        <activity 
+            android:name="com.hyphenate.easeui.ui.EaseBaiduMapActivity"
+            android:screenOrientation="portrait"
+            />
+        
+        <activity 
+            android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"
+            android:screenOrientation="portrait"
+            />
+        
+       <service
+         android:name="com.baidu.location.f"
+         android:enabled="true"
+         android:process=":remote" >
+        </service>
+        
+    </application>
+
+</manifest>

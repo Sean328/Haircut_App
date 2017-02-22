@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E9E9E9"
+    android:orientation="vertical" >
+    
+       <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/normal_orange_color" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="用户中心"
+            android:background="@color/normal_orange_color"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+        
+    </RelativeLayout>
+    
+   
+  <ScrollView 
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">   
+    <RelativeLayout 
+        android:id="@+id/login"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/normal_space"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp">
+        <ImageView
+            android:id="@+id/user_index_login_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/bad_face_lib"
+            android:scaleType="centerInside"
+            android:contentDescription="@null"/>
+        
+        <TextView 
+            android:id="@+id/user_index_login_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_index_login_image"
+            android:text="点我登录"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:paddingLeft="@dimen/little_space"/>
+
+        <TextView
+            android:id="@+id/user_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/user_index_login_text"
+            android:layout_alignParentBottom="true"
+            android:text="   "
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/gray" />
+
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+       	android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/normal_space">
+        <TextView 
+            android:id="@+id/user_order"
+            android:layout_width="0dp"
+            android:layout_weight="120"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/home_coupons"
+            android:text="我的订单"
+            android:textSize="18sp"/>
+        
+        <View 
+         android:layout_width="1dp"
+         android:layout_height="40dp"
+         android:layout_weight="1"
+         android:background="@color/lightgray"
+        />
+	
+        <TextView
+            android:id="@+id/user_cart"
+            android:layout_width="0dp"
+            android:layout_weight="120"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/icon_yaoqingma"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="购物车" 
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/user_kaquanbao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_space"
+        android:text="卡券包"
+        android:textSize="@dimen/text_size_defalut"
+        android:gravity="center_vertical"
+        android:padding="@dimen/normal_space"
+        android:drawableLeft="@drawable/icon_xianjinquan"
+        android:background="@color/white"
+        android:drawablePadding="@dimen/normal_space"/>
+    
+     <TextView 
+        android:id="@+id/collect_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_space"
+        android:text="我收藏的店铺"
+        android:textSize="@dimen/text_size_defalut"
+        android:gravity="center_vertical"
+        android:padding="@dimen/normal_space"
+        android:drawableLeft="@drawable/home_hairstyle"
+        android:background="@color/white"
+        android:drawablePadding="@dimen/normal_space"/>
+     
+      <TextView 
+        android:id="@+id/collect_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="我收藏的发型"
+        android:textSize="@dimen/text_size_defalut"
+        android:gravity="center_vertical"
+        android:padding="@dimen/normal_space"
+        android:drawableLeft="@drawable/home_hair_works"
+        android:background="@color/white"
+        android:drawablePadding="@dimen/normal_space"/>
+      
+       <TextView 
+        android:id="@+id/user_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_space"
+        android:text="我的评论"
+        android:textSize="@dimen/text_size_defalut"
+        android:gravity="center_vertical"
+        android:padding="@dimen/normal_space"
+        android:drawableLeft="@drawable/home_phone"
+        android:background="@color/white"
+        android:drawablePadding="@dimen/normal_space"/>
+       
+       <TextView 
+        android:id="@+id/user_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_space"
+        android:text="设置"
+        android:textSize="@dimen/text_size_defalut"
+        android:gravity="center_vertical"
+        android:padding="@dimen/normal_space"
+        android:drawableLeft="@drawable/home_setting"
+        android:background="@color/white"
+        android:drawablePadding="@dimen/normal_space"
+        android:layout_marginBottom="30dp"/>
+       
+       </LinearLayout> 
+       
+      </ScrollView>
+       
+</LinearLayout>

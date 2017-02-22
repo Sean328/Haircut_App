@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whitesmoke"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <!-- 
+        <TextView
+            android:id="@+id/tv_comment_shuliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="（1）"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+             -->
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/level_detail" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="用户评价"
+            android:textSize="16sp" />
+
+
+
+    </RelativeLayout>
+	     
+	    <ListView 
+	        android:id="@+id/listView_comment"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#F7F7F7"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:divider ="#E9E9E9"
+	        android:dividerHeight="10dp">
+	        
+	    </ListView>
+	     
+    
+
+</LinearLayout>

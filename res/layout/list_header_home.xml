@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+   
+    
+	    <RelativeLayout 
+	          android:layout_width="match_parent"
+	          android:layout_height="170dp"
+	          android:layout_margin="8dp">
+			        
+			  <android.support.v4.view.ViewPager
+		        android:id="@+id/viewpager"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" />
+			  
+			  <com.viewpagerindicator.LinePageIndicator
+		        android:id="@+id/indicator"
+		        android:padding="5dp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentRight="true"
+				app:strokeWidth="2dp"
+	        	app:lineWidth="12dp"
+	        	app:unselectedColor="#FF880000"
+	        	app:selectedColor="#FFFFFF"
+				
+	       	 />
+	    	
+	
+	      </RelativeLayout>
+	    
+	      <RadioGroup 
+				        android:id="@+id/rg_group_banner"
+				        android:layout_width="match_parent"
+				        android:layout_height="90dp"
+				        android:background="#ffffff"
+				        android:layout_marginLeft="8dp"
+				        android:layout_marginRight="8dp"
+				        android:orientation="horizontal" >
+				        <RadioButton
+				            android:id="@+id/rb_jianfa"
+				            style="@style/BannerTabStyle"
+				            android:drawableTop="@drawable/jian"
+				            android:drawablePadding="10dp"
+				            android:text="剪发" />
+				
+				        <RadioButton
+				            android:id="@+id/rb_tangfa"
+				            style="@style/BannerTabStyle"
+				            android:drawableTop="@drawable/ran"
+				            android:drawablePadding="10dp"
+				            android:text="烫发" />
+				
+				        <RadioButton
+				            android:id="@+id/rb_ranfa"
+				            style="@style/BannerTabStyle"
+				            android:drawableTop="@drawable/tang"
+				            android:drawablePadding="10dp"
+				            android:text="染发" />
+				
+				        <RadioButton
+				            android:id="@+id/rb_huli"
+				            style="@style/BannerTabStyle"
+				            android:drawableTop="@drawable/hu"
+				            android:drawablePadding="10dp"
+				            android:text="护理" />
+			</RadioGroup>
+			
+	        <LinearLayout 
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_marginTop="10dp"
+				        android:layout_marginLeft="5dp"
+				        android:layout_marginRight="5dp"
+				        android:background="#ffffff">
+				        
+				        <TextView 
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:padding="10dp"
+				            android:text="名店推荐"
+				            android:textColor="#000000"
+				            android:drawableLeft="@drawable/switch_time_detail"
+				            android:drawablePadding="5dp"
+				            android:textSize="18sp" />
+				        
+				 
+			</LinearLayout> 
+      
+
+</LinearLayout>
